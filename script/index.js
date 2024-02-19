@@ -8,9 +8,7 @@ for (const allKey of allKeys) {
     if (sum === 4) {
       allKeys.removeAttribute("click");
     }
-    if (allKey.classList.add("bg-[green]")) {
-      return;
-    }
+    allKey.classList.add("bg-[#1DD100]");
     sum += 1;
     sumMinas = sumMinas - 1;
     setInnerText("count-ticket", sum);
@@ -87,4 +85,8 @@ for (let i = 0; i < inputs.length; i++) {
 
 function btnsClicked() {
   hide.classList.remove("hidden");
+}
+
+function successBtn() {
+  window.location.reload(allKeys);
 }

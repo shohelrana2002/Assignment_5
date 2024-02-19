@@ -51,8 +51,8 @@
             </ul>
           </div>
           <a
-            class="real-sheba text-xl md:text-4xl font-extrabold text-[rgb(3, 7, 18)]"
-            >Bus-Ticket</a
+            class="cursor-pointer real-sheba text-xl md:text-4xl font-extrabold text-[rgb(3, 7, 18)]"
+            >P-Ticket</a
           >
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -316,9 +316,9 @@
               ></i>
             </div>
             <p class="real-sheba text font-semibold text-2xl m-2">
-              <span class="inter">550 </span>taka
+              <span class="inter text-[#030712]">550 </span>taka
             </p>
-            <p class="real-sheba text-xs">Per Seat</p>
+            <p class="real-sheba text-xs text-[#03071299]">Per Seat</p>
           </div>
         </div>
         <!-- select your set start  -->
@@ -365,7 +365,6 @@
                     />
                   </div>
                   <!-- seat bus start -->
-
                   <div class="mt-10">
                     <!-- fast sit  -->
                     <div
@@ -628,48 +627,75 @@
             <hr />
           </div>
         </section>
+
         <!-- select your set end  -->
       </section>
     </main>
     <!-- set section end -->
     <!-- Success section  -->
-    <section id="hide_succes" class="w-full hidden h-fit">
+    <section id="hide_succes" class="roboto container mx-auto hidden">
       <div
-        class="min-h-screen overflow-y-auto h-full w-full justify-center items-center"
+        class="rounded-xl w-[70%] bg-[#FFFFFF] fixed h-[70%] mt-20 mx-auto inset-0 overflow-y-auto bg-opacity-90 justify-center items-center"
       >
-        <div
-          class="bg-[#FFFFFF] rounded-xl flex justify-center flex-col items-center mt-20 mb-10 py-20 px-8 h-full"
-        >
-          <div>
+        <div class="container mx-auto">
+          <div
+            class="flex md:flex-row flex-col mt-16 justify-center items-center"
+          >
             <img src="pic/success.png" alt="" />
-            <h2>SUCCESS</h2>
           </div>
           <div>
-            <p class="px-2">
+            <h2 class="text-[#27AE60] text-center font-bold text-2xl my-2">
+              SUCCESS
+            </h2>
+          </div>
+          <div>
+            <p class="px-2 text-[#4A4A4A] flex justify-center text-center">
               Thank you for Booking Our Bus Seats. We are working hard to find
               the best service and deals for you.
             </p>
           </div>
-          <p class="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            dolore error esse vero maxime atque corrupti doloribus eligendi
-            debitis saepe?
+          <p class="text-[#4A4A4A] my-1 opacity-75 text-center px-0 md:px-5">
+            Paper or card is generally used, although plastic may be used
+            instead for durability.
+            <span class="hidden md:block"
+              >Some have a barcode or magnetic stripe for keeping simple data
+              stored on them.</span
+            >
           </p>
-          <button class="btn btn-success my-5 w-[50%] bg-[#1DD100]">
-            <a href="#top" class="px-20"> Success</a>
-          </button>
+          <!-- <button class="btn btn-success my-5 w-80 bg-[#1DD100]">
+            <a
+              onclick=" successBtn()"
+              class="flex justify-center items-center text-center mx-auto text-white font-bold"
+            >
+              Success</a
+            >
+          </button> -->
+          <div class="mx-auto flex justify-center items-center">
+            <button
+              onclick="successBtn()"
+              class="btn btn-success text-center my-4 px-20 text-white bg-[#1DD100]"
+            >
+              Success
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <!-- Success section  -->
     <footer class="bg-neutral">
       <main-footer
-        class="footer border-b-2 border-[#FFFFFF4D] mb-4 py-14 items-center px-0 md:px-4 container mx-auto text-neutral-content"
+        class="footer grid-cols-1 md:grid border-b-2 border-[#FFFFFF4D] mb-4 py-14 items-center px-0 md:px-4 container mx-auto text-neutral-content"
       >
         <aside class="items-center flex-col md:grid-flow-row">
-          <h1 class="real-sheba font-extrabold text-4xl">P-Ticket</h1>
+          <h1
+            class="real-sheba w-full text-center md:text-start font-extrabold text-4xl"
+          >
+            P-Ticket
+          </h1>
           <div class="">
-            <p class="inter mx-auto w-full font-normal">
+            <p
+              class="inter mx-auto w-full text-center md:text-start font-normal"
+            >
               P-Ticket is a digital platform to make your <br />
               daily commuting better.
             </p>
@@ -691,11 +717,15 @@
           </div>
         </nav>
       </main-footer>
-      <div class="flex justify-between container py-16 mx-auto">
+      <div
+        class="flex flex-col md:flex-row justify-center md:justify-between container text-center py-16 mx-auto"
+      >
         <div class="text-white">
           <p>&copy; all rights reserved, P-Ticket services limited.2024</p>
         </div>
-        <div class="text-white flex justify-between gap-1 md:gap-20">
+        <div
+          class="text-white flex flex-col md:flex-row justify-center md:justify-between gap-1 md:gap-16"
+        >
           <p>Terms & condition</p>
           <p>Return & refund policy</p>
           <p>Privacy policy</p>
