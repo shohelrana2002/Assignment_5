@@ -37,7 +37,7 @@ for (const allKey of allKeys) {
     btn.addEventListener("click", function (e) {
       const inputFiled = document.getElementById("input-filed");
       const inputFiledValue = inputFiled.value;
-      const couponCode = inputFiledValue.split(" ").join("").toUpperCase();
+      const couponCode = inputFiledValue;
       const hide = document.getElementById("hidden");
       document.getElementById("btn-input").removeAttribute("disabled");
       if (couponCode === "NEW15") {
