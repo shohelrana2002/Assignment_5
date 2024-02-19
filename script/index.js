@@ -63,3 +63,22 @@ for (const allKey of allKeys) {
     allKey.classList.add("bg-[green]");
   });
 }
+
+// input number
+const btns = document.getElementsByClassName("btn-success");
+const inputs = document.getElementsByClassName("nummber-input");
+
+for (let i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener("input", function () {
+    const telValue = this.value.length;
+    if (telValue === 0) {
+      for (let j = 0; j < btns.length; j++) {
+        btns[j].setAttribute("disabled", true);
+      }
+    } else {
+      for (let j = 0; j < btns.length; j++) {
+        btns[j].removeAttribute("disabled");
+      }
+    }
+  });
+}

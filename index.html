@@ -174,7 +174,7 @@
       </section>
       <!-- banner end -->
     </header>
-    <main>
+    <main class="">
       <section class="container mx-auto">
         <div class="mx-auto text-center my-20 real-sheba font-bold">
           <h1 class="text-5xl">Best offers for you</h1>
@@ -209,7 +209,7 @@
               </p>
             </div>
             <div class="flex-1 ml-16 real-sheba">
-              <h1 class="text-4xl font-extrabold">Couple20</h1>
+              <h1 class="text-4xl font-extrabold">Couple 20</h1>
               <p class="text-xl mt-2">Coupon Code</p>
             </div>
           </div>
@@ -523,8 +523,10 @@
                       </div>
                       <input
                         type="tel"
+                        min="0"
+                        max="11"
                         placeholder="Enter Your Phone Number"
-                        class="input input-bordered w-full"
+                        class="input nummber-input input-bordered w-full"
                       />
                     </label>
                     <label class="form-control w-full">
@@ -539,9 +541,10 @@
                     </label>
                     <button
                       disabled
+                      id="btn-success "
                       class="btn btn-success my-5 w-full bg-[#1DD100]"
                     >
-                      Success
+                      <a href="succes.html">Success</a>
                     </button>
                   </section>
                   <!-- input filed end -->
@@ -560,8 +563,9 @@
         </section>
         <!-- select your set end  -->
       </section>
-      <!-- set section end -->
     </main>
+    <!-- set section end -->
+
     <footer class="bg-neutral">
       <main-footer
         class="footer border-b-2 border-[#FFFFFF4D] mb-4 py-14 items-center px-4 container mx-auto text-neutral-content"
