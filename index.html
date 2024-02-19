@@ -235,7 +235,7 @@
       </section>
       <!-- set section start -->
       <section
-        class="bg-[#F7F8F8] border-t-2 rounded-t-[100px] border-[#1DD100] p-20"
+        class="bg-[#F7F8F8] border-t-2 rounded-t-[100px] border-[#1DD100] p-1 md:p-20"
       >
         <!-- title start  -->
         <div id="target" class="text-center">
@@ -249,14 +249,18 @@
         </div>
         <!-- total start  -->
         <div
-          class="container mx-auto flex flex-col md:flex-row justify-between rounded-xl bg-white"
+          class="container mx-auto flex flex-col md:flex-row justify-center md:justify-between rounded-xl bg-white"
         >
           <div class="w-full">
-            <div class="flex justify-between items-center m-4">
-              <div class="flex gap-3">
+            <div
+              class="flex flex-col md:flex-row justify-center md:justify-between items-center m-4"
+            >
+              <div class="flex flex-col md:flex-row gap-3">
                 <div><img src="pic/bus-logo.png" alt="" /></div>
                 <div>
-                  <h1 class="real-sheba text-3xl font-bold text-[#030712]">
+                  <h1
+                    class="real-sheba text-xl md:text-3xl font-bold text-[#030712]"
+                  >
                     Greenline Paribahan
                   </h1>
                   <p class="inter font-normal">Coach-009-WEB ! AC_Business</p>
@@ -272,7 +276,7 @@
               </div>
             </div>
             <!-- input section start  -->
-            <div class="bg-[#F7F8F8] rounded-2xl ml-4">
+            <div class="bg-[#F7F8F8] rounded-2xl ml-0 md:ml-4">
               <div class="flex justify-between">
                 <h1 class="text-[#03071299] mx-2 font-semibold real-sheba my-5">
                   Route
@@ -287,7 +291,9 @@
                 <h1 class="my-5 real-sheba font-semibold mx-2">9.00 PM</h1>
               </div>
               <hr />
-              <div class="flex justify-around my-7 pb-4">
+              <div
+                class="flex flex-col md:flex-row gap-4 md:gap-0 justify-around my-7 pb-4"
+              >
                 <button class="btn btn-active">
                   Boarding Point - Laxmipur
                 </button>
@@ -296,24 +302,30 @@
               </div>
             </div>
           </div>
-          <div><img src="pic/info-devider.png" alt="" /></div>
-          <div class="w-80 flex flex-col justify-center items-center">
+          <div>
+            <img class="hidden md:block" src="pic/info-devider.png" alt="" />
+          </div>
+          <div
+            class="w-full md:w-80 flex flex-row md:flex-col justify-center items-center"
+          >
             <div>
               <i
                 class="fa-solid fa-bangladeshi-taka-sign text-center bg-green-800 p-3 rounded-full text-white"
               ></i>
             </div>
             <p class="real-sheba text font-semibold text-2xl m-2">
-              <span>550</span>taka
+              <span class="inter">550 </span>taka
             </p>
             <p class="real-sheba text-xs">Per Seat</p>
           </div>
         </div>
         <!-- select your set start  -->
-        <section class="container mx-auto">
-          <div class="flex justify-between p-10">
+        <section class="container mx-auto my-5">
+          <div class="flex md:flex-row flex-col justify-between p-1 md:p-0">
             <div class="w-full">
-              <div class="flex justify-between w-full">
+              <div
+                class="flex flex-col md:flex-row justify-center md:justify-between w-full"
+              >
                 <div class="w-full">
                   <div
                     class="border-b-2 border-[#03071233] pb-4 real-sheba font-semibold"
@@ -321,9 +333,13 @@
                     Select Your Set
                   </div>
                   <div class="mt-16">
-                    <div class="flex justify-between items-center">
+                    <div
+                      class="flex flex-col md:flex-row justify-center md:justify-between items-center"
+                    >
                       <!-- <div class="" style="margin-top: -40px"> -->
-                      <div class="flex justify-between items-center w-full">
+                      <div
+                        class="flex gap-10 md:gap-0 justify-between items-center w-full"
+                      >
                         <div class="flex gap-3">
                           <p class="inter font-medium">Available</p>
                           <img src="pic/seat-gray.png" alt="" />
@@ -338,13 +354,19 @@
                     </div>
                   </div>
                   <!-- bus steering -->
-                  <div class="flex justify-end">
-                    <img class="w-9 mt-5" src="pic/steering.png" alt="" />
+                  <div class="flex justify-center md:justify-end">
+                    <img
+                      class="w-20 md:w-9 mt-5"
+                      src="pic/steering.png"
+                      alt=""
+                    />
                   </div>
                   <!-- seat bus start -->
                   <div class="mt-10">
                     <!-- fast sit  -->
-                    <div class="flex justify-between">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >A</kbd
                       >
@@ -354,7 +376,9 @@
                       <kbd class="kbd px-8">A4</kbd>
                     </div>
                     <!-- 2nd sit  -->
-                    <div class="flex justify-between my-4">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >B</kbd
                       >
@@ -364,7 +388,9 @@
                       <kbd class="kbd px-8">B4</kbd>
                     </div>
                     <!-- 3rd sit  -->
-                    <div class="flex justify-between">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >C</kbd
                       >
@@ -374,7 +400,9 @@
                       <kbd class="kbd px-8">C4</kbd>
                     </div>
                     <!-- 4th sit  -->
-                    <div class="flex justify-between my-4">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >D</kbd
                       >
@@ -384,7 +412,9 @@
                       <kbd class="kbd px-8">D4</kbd>
                     </div>
                     <!-- 5th sit  -->
-                    <div class="flex justify-between">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >E</kbd
                       >
@@ -394,7 +424,9 @@
                       <kbd class="kbd px-8">E4</kbd>
                     </div>
                     <!-- 6th sit  -->
-                    <div class="flex justify-between my-4">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >F</kbd
                       >
@@ -404,7 +436,9 @@
                       <kbd class="kbd px-8">F4</kbd>
                     </div>
                     <!-- 7th sit  -->
-                    <div class="flex justify-between my-4">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >G</kbd
                       >
@@ -414,7 +448,9 @@
                       <kbd class="kbd px-8">G4</kbd>
                     </div>
                     <!-- 8th sit  -->
-                    <div class="flex justify-between my-4">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >H</kbd
                       >
@@ -424,7 +460,9 @@
                       <kbd class="kbd px-8">H4</kbd>
                     </div>
                     <!-- 9th sit  -->
-                    <div class="flex justify-between my-4">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >I</kbd
                       >
@@ -434,7 +472,9 @@
                       <kbd class="kbd px-8">I4</kbd>
                     </div>
                     <!-- 10th sit  -->
-                    <div class="flex justify-between my-4">
+                    <div
+                      class="flex justify-center gap-4 md:gap-0 md:justify-between my-4"
+                    >
                       <kbd className="kbd inter font-medium text-[#03071280]"
                         >J</kbd
                       >
@@ -445,16 +485,20 @@
                     </div>
                   </div>
                 </div>
-                <img src="pic/info-devider.png" alt="" />
+                <img
+                  class="hidden md:block"
+                  src="pic/info-devider.png"
+                  alt=""
+                />
                 <div>
                   <div
-                    class="w-96 border-b-2 border-[#03071233] pb-4 real-sheba font-semibold"
+                    class="w-full md:w-96 border-b-2 border-[#03071233] pb-4 real-sheba font-semibold"
                   >
                     Select Your Set
                   </div>
                   <!-- total cost  start  -->
                   <section>
-                    <div class="bg-white p-4 mt-2 rounded-2xl">
+                    <div class="bg-white p-1 md:p-4 mt-2 rounded-2xl">
                       <div
                         class="flex justify-between mt-10 border-b-2 border-dotted border-[#03071233] pb-5"
                       >
@@ -585,12 +629,12 @@
 
     <footer class="bg-neutral">
       <main-footer
-        class="footer border-b-2 border-[#FFFFFF4D] mb-4 py-14 items-center px-4 container mx-auto text-neutral-content"
+        class="footer border-b-2 border-[#FFFFFF4D] mb-4 py-14 items-center px-0 md:px-4 container mx-auto text-neutral-content"
       >
-        <aside class="items-center grid-flow-row">
+        <aside class="items-center flex-col md:grid-flow-row">
           <h1 class="real-sheba font-extrabold text-4xl">P-Ticket</h1>
           <div class="">
-            <p class="inter font-normal">
+            <p class="inter mx-auto w-full font-normal">
               P-Ticket is a digital platform to make your <br />
               daily commuting better.
             </p>
