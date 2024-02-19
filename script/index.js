@@ -8,7 +8,7 @@ for (const allKey of allKeys) {
     if (sum === 4) {
       allKeys.removeAttribute("click");
     }
-    allKey.classList.add("bg-[#1DD100]");
+    allKey.classList.add("bg-[#1DD100]", "text-white");
     sum += 1;
     sumMinas = sumMinas - 1;
     setInnerText("count-ticket", sum);
