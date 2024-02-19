@@ -8,6 +8,9 @@ for (const allKey of allKeys) {
     if (sum === 4) {
       allKeys.removeAttribute("click");
     }
+    if (allKey.classList.add("bg-[green]")) {
+      return;
+    }
     sum += 1;
     sumMinas = sumMinas - 1;
     setInnerText("count-ticket", sum);
@@ -60,14 +63,13 @@ for (const allKey of allKeys) {
     li.appendChild(p2);
     li.appendChild(p3);
     add.appendChild(li);
-    allKey.classList.add("bg-[green]");
   });
 }
 
 // input number
 const btns = document.getElementsByClassName("btn-success");
 const inputs = document.getElementsByClassName("nummber-input");
-
+const hide = document.getElementById("hide_succes");
 for (let i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("input", function () {
     const telValue = this.value.length;
@@ -81,4 +83,8 @@ for (let i = 0; i < inputs.length; i++) {
       }
     }
   });
+}
+
+function btnsClicked() {
+  hide.classList.remove("hidden");
 }
